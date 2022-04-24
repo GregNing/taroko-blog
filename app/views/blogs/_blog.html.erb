@@ -1,12 +1,7 @@
-<div id="<%= dom_id blog %>">
-  <p>
-    <strong>Title:</strong>
-    <%= blog.title %>
-  </p>
-
-  <p>
-    <strong>Author:</strong>
-    <%= blog.author %>
-  </p>
-
-</div>
+<tr id="<%= dom_id blog %>">
+  <td class="align-middle"><%= blog.title %></td>
+  <td class="align-middle"><%= blog.content %></td>
+  <td class="align-middle"><%= blog.author %></td>
+  <td class="align-middle"><%= blog.created_at %></td>
+  <td><%= link_to 'Show', blog, class: 'btn btn-outline-primary' %></td>
+</tr>
